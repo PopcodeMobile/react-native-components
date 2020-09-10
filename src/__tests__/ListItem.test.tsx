@@ -31,7 +31,6 @@ describe('List Item', () => {
         leftSubtitle={'automática diária'}
         rightTitle={'10001'}
         rightSubtitle={'ativo'}
-        onPressIcon={1}
         onPressItem={mockFn}
         accessibilityLabel="Botão de detalhes"
       />

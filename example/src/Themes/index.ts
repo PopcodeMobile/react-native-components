@@ -2,7 +2,6 @@ import { Appearance } from 'react-native';
 import { useTheme } from '@react-navigation/native';
 
 import type { ColorsType, CustomTheme, FontsType } from './Entities';
-import Images from './Images';
 import {
   colors as LightColors,
   fonts as LightFonts,
@@ -34,5 +33,5 @@ const useCustomTheme = () => {
   return (theme as unknown) as CustomTheme;
 };
 
-export { Colors, Fonts, ThemeColors, ThemeFonts, useCustomTheme, Images };
+export { Colors, Fonts, ThemeColors, ThemeFonts, useCustomTheme };
 export * from './Entities';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react-native';
 import Center from '../../storybook/Center';
-import { Colors, Images } from '../Themes';
+import { Colors } from '../Themes';
 import ReactNativeComponents from '@popcode.mobile/react-native-components';
 
 storiesOf('VerticalTimelineItem', module)
@@ -79,7 +79,6 @@ storiesOf('VerticalTimelineItem', module)
       rightTitle={'10001'}
       rightSubtitle={'ativo'}
       onPressItem={() => {}}
-      onPressIcon={Images.chevronRight}
     />
   ));
 

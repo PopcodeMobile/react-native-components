@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import { getStyles } from './ListItem.style';
 import RoundedIndicator from './RoundedIndicator';
-import { useCustomTheme } from '../Themes';
+import { useCustomTheme, Images } from '../Themes';
 
 export interface ListItemType {
   datetime?: string;
@@ -24,7 +24,6 @@ export interface ListItemType {
   accessibilityLabel?: string;
   leftOverHeader?: string;
   rightTitleStyle?: StyleProp<TextStyle>;
-  onPressIcon?: number;
 }
 
 const ListItem = ({
@@ -40,7 +39,6 @@ const ListItem = ({
   accessibilityLabel,
   leftOverHeader,
   rightTitleStyle,
-  onPressIcon,
 }: ListItemType) => {
   const theme = useCustomTheme();
   const styles = getStyles(theme);
@@ -92,11 +90,11 @@ const ListItem = ({
             )}
           </View>
         </View>
-        {onPressItem && onPressIcon && (
+        {onPressItem && (
           <Image
             testID="onPressIcon"
             accessibilityIgnoresInvertColors
-            source={onPressIcon}
+            source={Images.chevron.right['6px']}
             style={styles.chevron}
           />
         )}

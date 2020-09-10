@@ -11,7 +11,7 @@ import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
-import com.popcodemobilereactnativecomponents.ReactNativeComponentsPackage;
+// import com.popcodemobilereactnativecomponents.ReactNativeComponentsPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -28,7 +28,7 @@ public class MainApplication extends Application implements ReactApplication {
           List<ReactPackage> packages = new PackageList(this).getPackages();
           // Packages that cannot be autolinked yet can be added manually here, for ReactNativeComponentsExample:
           // packages.add(new MyReactNativePackage());
-          packages.add(new ReactNativeComponentsPackage());
+          // packages.add(new ReactNativeComponentsPackage());
 
           return packages;
         }

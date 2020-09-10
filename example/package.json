@@ -9,6 +9,8 @@
     "start": "react-native start"
   },
   "dependencies": {
+    "@react-navigation/native": "^5.7.3",
+    "@storybook/react-native": "^5.3.21",
     "react": "16.11.0",
     "react-native": "0.62.2"
   },
